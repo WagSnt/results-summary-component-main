@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 550px;
+  height: 500px;
   width: 750px;
   min-width: 375px;
   border-radius: 30px;
@@ -35,7 +35,6 @@
 .your-results h2{
   color: hsl(241, 100%, 89%);
   margin: 40px;
-  
 }
 
 .results-ball {
@@ -66,7 +65,7 @@
 
 .your-results > h1 {
   color: white;
-  margin: 20px 0px;
+  margin: 10px 0px;
   font-weight: 500;
 }
 
@@ -163,3 +162,57 @@
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
+
+
+@media (max-width: 580px) {
+  .container {
+    height: 100vh;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+  }
+  .content {
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+  }
+  .your-results{
+    height: 100%;
+    width: 100%;
+  }
+
+  .summary {
+    width: 100%;
+  }
+  .summary-content {
+    margin: 20px;
+  }
+  .your-results h2{
+    margin: 10px;
+  }
+  .results-ball {
+    margin: 0 auto;
+    padding-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .results-ball > h1 {
+    font-size: 15px;
+  }
+  .your-results > p {
+    color: hsl(241, 100%, 89%);
+    font-size: 15px;
+    margin: 20px;
+  }
+  .your-results > h1 {
+    color: white;
+    margin: 5px 0px;
+    font-weight: 500;
+    font-size: 15px;
+  }
+}
